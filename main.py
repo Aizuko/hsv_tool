@@ -148,7 +148,7 @@ if __name__ == "__main__":
             is_next = key == ord(" ")
 
             if is_quit or is_next:
-                print(f"==== Final HSVs for {image_path.stem} ====")
+                print(f"==== Final HSVs for {image_path.name} ====")
                 print(f"lowH = {low_H}")
                 print(f"lowS = {low_S}")
                 print(f"lowV = {low_V}")
@@ -159,7 +159,7 @@ if __name__ == "__main__":
                 print(
                     f"({low_H}, {low_S}, {low_V}), ({high_H}, {high_S}, {high_V})"
                 )
-                print("====================")
+                print("=======================================================")
 
                 if is_quit:
                     print("Quitting")
